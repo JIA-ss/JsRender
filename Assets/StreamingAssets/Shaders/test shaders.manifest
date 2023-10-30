@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3262678439
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: eea0a7cf9f405e6133f5ad475952f1d9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 55d48f4ad9c3b13330b9eb5ee5686477
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/JoshuaRP/Forward/Shaders/AssetBundleTest/Color.shader
+Dependencies: []
