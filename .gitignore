@@ -5,3 +5,7 @@ Logs
 UserSettings
 *.csproj
 *.sln
+*.sln.*
+Temp
+obj
+.idea

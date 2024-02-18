@@ -591,6 +591,7 @@ public class BaseRenderPipeline : RenderPipeline
     static int[] LightSplitIndices = new int[(int)LightPriorityType.Baked + 1];
     static VisibleLight[] VisibleLightsCache = null;
     public static int[] LightIndexRemapping = null;
+    public static int maxVisibleAdditionalLights = 256;
 
     
     static LightPriorityType GetLightPriority(Light light)

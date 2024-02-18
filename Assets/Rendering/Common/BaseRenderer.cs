@@ -53,14 +53,6 @@ public abstract class BaseRenderer
     }
     public virtual void SetupLights(ScriptableRenderContext context, ref RenderingData renderingData)
     {
-        CommandBuffer cmd = CommandBufferPool.Get(k_SetupLightConstants);
-        VisibleLight mainLight = renderingData.lightData.visibleLights[renderingData.lightData.mainLightIndex];
-        Vector4 dir = -mainLight.localToWorldMatrix.GetColumn(2);
-        dir = -mainLight.light.gameObject.transform.forward;
-        cmd.SetGlobalVector(ShaderID._MainLightPosition, new Vector4(dir.x, dir.y, dir.z, 0.0f));
-        cmd.SetGlobalVector(ShaderID._MainLightColor, mainLight.finalColor);
-        context.ExecuteCommandBuffer(cmd);
-        CommandBufferPool.Release(cmd);
     }
     protected virtual void ClearRenderingState(CommandBuffer cmd)
     {

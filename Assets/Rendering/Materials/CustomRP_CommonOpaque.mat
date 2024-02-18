@@ -27,7 +27,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AO: 0
-    - _Metallic: 0
-    - _Roughness: 0.204
+    - _Metallic: 0.562
+    - _Roughness: 0.753
     m_Colors: []
   m_BuildTextureStacks: []
